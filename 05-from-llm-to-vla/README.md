@@ -13,7 +13,7 @@ Scalar encode/decode, data loading, normalization and plotting are supplied. The
 
 1. Open the notebook in [Google Colab](https://colab.research.google.com/) or download and upload the `.ipynb`. Helper code and figures are included; the data archives are downloaded by the setup cell, so no companion files need uploading.
 2. Select a CPU runtime. Python 3.10–3.13 is supported by the setup; local validation used Python 3.13.
-3. Run the environment installation cell first, then the supplied data and helper cells. Internet access is needed for package installation and the initial archive download (about 1 MB).
+3. Run the environment installation cell first, then the supplied data and helper cells. Setup preserves installed scientific libraries and the PyTorch/torchvision pair. If you ran an older version that replaced NumPy, restart the session before rerunning the updated notebook. Internet access is needed for package installation and the initial archive download (about 1 MB).
 4. Complete the four TODOs and the `Question` prompts. Run the checks and retain the tables and plots in your submitted notebook.
 5. Download generated CSVs and figures from the printed runtime directory (`/content/seminar05` in Colab) if you want separate copies.
 
