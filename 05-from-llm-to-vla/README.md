@@ -11,13 +11,20 @@ Scalar encode/decode, data loading, normalization and plotting are supplied. The
 
 ## Run in Google Colab
 
-1. Open the notebook in [Google Colab](https://colab.research.google.com/) or download and upload the `.ipynb`. The notebook is self-contained; no companion files need uploading.
+1. Open the notebook in [Google Colab](https://colab.research.google.com/) or download and upload the `.ipynb`. Helper code and figures are included; the data archives are downloaded by the setup cell, so no companion files need uploading.
 2. Select a CPU runtime. Python 3.10–3.13 is supported by the setup; local validation used Python 3.13.
-3. Run the environment installation cell first, then the supplied data and helper cells. Internet access is needed for package installation.
+3. Run the environment installation cell first, then the supplied data and helper cells. Internet access is needed for package installation and the initial archive download (about 1 MB).
 4. Complete the four TODOs and the `Question` prompts. Run the checks and retain the tables and plots in your submitted notebook.
 5. Download generated CSVs and figures from the printed runtime directory (`/content/seminar05` in Colab) if you want separate copies.
 
-The notebook includes a real BridgeData V2 subset and the pinned FAST+ tokenizer. It does not require robot hardware, model training, GPU memory or full OpenVLA weights.
+The setup downloads a real BridgeData V2 subset and the pinned FAST+ tokenizer from this repository, verifies SHA-256 hashes and reuses valid cached files. It does not require robot hardware, model training, GPU memory or full OpenVLA weights.
+
+## Download files
+
+- [Prepared BridgeData V2 subset](assets/bridge_subset.zip).
+- [FAST+ tokenizer](assets/fast_tokenizer.zip).
+
+The notebook contains links and a short Python download cell. For local execution, keep these archives in `assets/` beside the notebook to skip downloading. If download fails, its output identifies the URL and error.
 
 ## Data and interpretation
 

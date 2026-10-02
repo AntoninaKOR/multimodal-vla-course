@@ -1,6 +1,6 @@
 # Upstream provenance
 
-The student notebook embeds original figures, a prepared BridgeData V2 archive and the official FAST+ processor and vocabulary. It contains adapted teaching helpers and linked source excerpts. Teacher solutions and reference-result files are not part of this release.
+The student notebook embeds original figures and downloads the prepared BridgeData V2 archive and the official FAST+ processor and vocabulary from `assets/`. It contains adapted teaching helpers and linked source excerpts. Teacher solutions and reference-result files are not part of this release.
 
 ## Pinned code and tokenizer
 
@@ -11,7 +11,7 @@ The student notebook embeds original figures, a prepared BridgeData V2 archive a
 | [moojink/transformers-openvla-oft](https://github.com/moojink/transformers-openvla-oft/tree/bc339d9ad707454c0c115970db43c260067c61ab) | `bc339d9ad707454c0c115970db43c260067c61ab` |
 | [physical-intelligence/fast](https://huggingface.co/physical-intelligence/fast/tree/ec4d7aa71691cac0b8bed6942be45684db2110f4) | `ec4d7aa71691cac0b8bed6942be45684db2110f4` |
 
-OpenVLA-derived helpers and excerpts retain the upstream [MIT notice](licenses/OpenVLA-MIT.txt). OFT excerpts retain the [OFT MIT notice](licenses/OpenVLA-OFT-MIT.txt). The Transformers fork and FAST+ use [Apache 2.0](licenses/Apache-2.0.txt). FAST+'s upstream README, configuration, processor and tokenizer files are preserved inside its embedded archive.
+OpenVLA-derived helpers and excerpts retain the upstream [MIT notice](licenses/OpenVLA-MIT.txt). OFT excerpts retain the [OFT MIT notice](licenses/OpenVLA-OFT-MIT.txt). The Transformers fork and FAST+ use [Apache 2.0](licenses/Apache-2.0.txt). FAST+'s upstream README, configuration, processor and tokenizer files are preserved inside its downloaded archive.
 
 ## BridgeData V2
 
@@ -33,9 +33,9 @@ Preprocessing removes the original first step, binarizes gripper commands as in 
 
 Figures are embedded as notebook attachments and retain attribution beside each image. They are reproduced from the original sources, not redrawn. The code license notices above apply to code; figure authorship is credited separately.
 
-## Embedded archives
+## Downloaded archives
 
-The setup cell verifies these SHA-256 hashes before extraction:
+The setup cell downloads [Bridge examples](assets/bridge_subset.zip) and [FAST+](assets/fast_tokenizer.zip), then verifies these SHA-256 hashes before extraction:
 
 | Archive | SHA-256 |
 |---|---|
