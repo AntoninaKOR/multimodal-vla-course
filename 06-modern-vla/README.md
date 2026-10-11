@@ -30,7 +30,7 @@ simulator, or full π-model checkpoint is required. The first run downloads abou
 0.9 GB of public pretrained SmolVLA weights plus configuration/tokenizer files.
 Internet access is needed for these downloads and package installation.
 
-The setup pins LeRobot 0.4.4 and Transformers 4.57.1 while preserving the
+The setup pins LeRobot 0.4.4, Transformers 4.57.1, and PyAV 15.1.0 while preserving the
 installed PyTorch/torchvision pair and scientific packages. SmolVLA runs in
 float32 for the controlled experiments. The notebook does not fine-tune the
 full policy; the final gate experiment updates one small teaching parameter.
